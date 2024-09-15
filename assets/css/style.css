@@ -222,7 +222,7 @@ footer p {
     border-radius: 0 var(--radius) var(--radius) 0;
     position: relative;
     text-decoration: none;
-	color: var(--black);
+	color: var(--darkgray);
 	font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 	font-size: 1.1rem;
