@@ -1,0 +1,233 @@
+/* GENERAL */
+:root {
+	--radius: 20px;
+	--black: #28282B;
+	--darkgray: #707070;
+	--lightgray: #fbfbfb;
+	--gray: #f4f4f4;
+	--white: #fff;
+	--blue: #1593dc;
+}
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.5;
+    justify-content: center;
+	color: var(--black);
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: var(--black);
+	font-family: 'Courier New', Courier, monospace;
+	margin-top: 2rem;
+}
+h1 {
+	font-size: 2.2rem;
+}
+a {
+	color: var(--blue);
+	text-decoration: none;
+}
+.code {
+	background: var(--lightgray);
+	padding: 0.1rem 0.3rem;
+	border: 1px solid var(--darkgray);
+	border-radius: 5px;
+}
+
+
+
+/* HEADER */
+header {
+	text-align: center;
+	padding: 1rem;
+	padding-bottom: 0;
+}
+header h1 {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 3rem;
+}
+nav ul {
+	list-style: none;
+	padding-top: 20px;
+}
+nav ul li {
+	display: inline-block;
+	margin-right: 1rem;
+	border: #28282B 1px solid;
+	padding: 0;
+	border-radius: var(--radius);
+}
+nav ul li.active, nav ul li:hover {
+    background-color: var(--gray);
+}
+nav ul li a {
+	color: var(--black);
+	text-decoration: none;
+	display: inline;
+	width: 100%;
+	margin: 0px;
+	padding: 1rem;
+	line-height: 2.8;
+}
+nav ul li a img {
+	width: 1.2rem;
+	height: 1.2rem;
+    position: relative;
+    top: 0.2rem;
+	margin-right: 0.5rem;
+}
+
+.container {
+	display: flex;
+    width: 100%;
+	min-height: 700px;
+    max-width: 800px;
+	margin: 0 auto;
+}
+
+/* SIDENAV */
+.sidenav {
+	width: 20%;
+	margin-right: 5%;
+	margin-top: 2rem;
+}
+aside {
+	padding: 0.8rem 1rem 1rem 1rem;
+	margin: 1.5rem 5% 0 0;
+	background: var(--gray);
+	border: #28282B 1px solid;
+	border-radius: 0 var(--radius) var(--radius) 0;
+}
+aside ul {
+	list-style: none;
+	border-top: #28282B 1px solid;
+	padding: 0;
+	margin: 0;
+}
+aside ul li {
+	padding-top: 20px;
+	border-bottom: #28282B 1px solid;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	padding: 1rem;
+}
+aside ul li.active, aside ul li:hover {
+	border-left: #28282B 1px dashed;
+	border-right: #28282B 1px dashed;
+}
+aside ul li a {
+	color: #28282B;
+	text-decoration: none;
+}
+
+
+/* MAIN CONTENT */
+.content-aside {
+	max-width: 800px;
+	width: 75%;
+	padding: 1rem;
+}
+
+.content-plain {
+	width: 90%;
+    margin-left: 10%;
+	padding: 1rem;
+}
+  
+
+
+/* FOOTER */
+footer {
+	/* position */
+	position: static;
+	display: block;
+	text-align: center;
+	bottom: 0;
+	/* padding and border */
+	padding: 0 2rem 0 2rem;
+	margin-top: 3rem;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	border: #28282B 1px solid;
+	border-bottom: none;
+	border-radius: var(--radius) var(--radius) 0 0;
+	/* center the footer */
+}
+
+footer p {
+	margin: 0;
+	padding: 0.8rem 1rem 0.5rem 1rem;
+}
+
+
+
+/* ACCORDION */
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+	color: var(--black);
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1.1rem;
+	font-weight: bold;
+	background-color: var(--white);
+	border: 1px solid var(--darkgray);
+	border-radius: var(--radius) var(--radius) 0 0;
+	cursor: pointer;
+	padding: 18px;
+	margin-top: 3rem;
+	width: 100%;
+	text-align: left;
+	outline: none;
+	transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+	background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .accordion-panel {
+	padding: 0 18px;
+	background-color: white;
+	border-left: 1px solid var(--darkgray);
+	border-right: 1px solid var(--darkgray);
+	border-bottom: 1px solid var(--darkgray);
+	border-radius: 0 0 var(--radius) var(--radius);
+	display: none;
+	overflow: hidden;
+  }
+
+  .accordion:after {
+	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: #777;
+	float: right;
+	margin-left: 5px;
+  }
+  
+  .active:after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+
+
+/* BUTTON */
+.github-button {
+    display: inline-block;
+    padding: 10px 20px;
+	margin-top: 2rem;
+    background-color: var(--white);
+    border: 1px solid black;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    position: relative;
+    text-decoration: none;
+	color: var(--black);
+	font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+	font-size: 1.1rem;
+}
+
+.custom-button:hover {
+    background-color: green;
+}
