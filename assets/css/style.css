@@ -218,11 +218,11 @@ footer p {
     padding: 10px 20px;
 	margin-top: 2rem;
     background-color: var(--white);
-    border: 1px solid black;
+    border: 1px solid var(--darkgray);
     border-radius: 0 var(--radius) var(--radius) 0;
     position: relative;
     text-decoration: none;
-	color: var(--darkgray);
+	color: var(--black);
 	font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 	font-size: 1.1rem;
