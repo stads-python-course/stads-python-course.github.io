@@ -199,15 +199,17 @@ footer p {
   }
 
   .accordion:after {
-	content: '\02795'; /* Unicode character for "plus" sign (+) */
-	font-size: 13px;
-	color: #777;
+	content: '+';
+	font-size: 1.4rem;
+	color: var(--black);
+	font-weight: bold;
 	float: right;
 	margin-left: 5px;
+	margin-top: -3px;
   }
   
   .active:after {
-	content: "\2796"; /* Unicode character for "minus" sign (-) */
+	content: "-";
   }
 
 
