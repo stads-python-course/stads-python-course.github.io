@@ -233,3 +233,49 @@ footer p {
 .custom-button:hover {
     background-color: green;
 }
+
+
+
+/* MOBILE DEVICES */
+@media only screen and (max-width: 800px) {
+	.container {
+		flex-direction: column;
+	}
+	.sidenav {
+		width: 100%;
+		margin-right: 0;
+		margin-top: 0;
+	}
+	aside {
+		margin-right: 0;
+		border-radius: 0;
+	}
+	.content-aside {
+		width: 90%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.content-plain {
+		width: 90%;
+		margin-left: 0;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	header {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+	nav ul li {
+		margin-top: 0.8rem;
+	}
+	footer {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+	}
+	footer p {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+}
