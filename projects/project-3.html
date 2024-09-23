@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project 3 - STADS Python Course HWS 2024</title>
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<script src="https://www.w3schools.com/lib/w3data.js"></script>
+    <link rel="icon" href="/assets/img/stads.png" type="image/x-icon" />
+</head>
+<body>
+	<div w3-include-html="/assets/html/header.html" class="header"></div>
+	<div class="container">
+		<div w3-include-html="sidenav.html" class="sidenav"></div>
+		<div class="content-aside">
+			<h1>3: Random Number Guesser</h1>
+			<h3>Task</h3>
+			<p>Your task is to code the number guesser game. You should generate a random number and the user has to guess until they guess the number.</p>
+			<p><i>ToDo's:</i></p>
+			<ol>
+				<li>Initialize a random number</li>
+				<li>Create a loop which should loop until the number is guessed</li>
+				<li>Ask the user for their guess</li>
+				<li>If the guessed number equals the actual number then print "Hurraaa you won! <i>guessed_number</i> was the corret guess."</li>
+				<li>If the guessed number is larger than the actual number then print "Go lower!"</li>
+				<li>If the guessed number is smaller than the actual number then print "Go higher!"</li>
+			</ol>
+			<p><i>Optional:</i></p>
+			<ul>
+				<li>Give the user the chance to play again if they guessed the correct number</li>
+				<li>You can implement lives so the user has to guess the guess number within given lives</li>
+			</ul>
+			<a target="_blank" rel="noopener noreferrer" href="https://github.com/STADS-Mannheim/python-course-2024/tree/main/Project_03_Random_Number_Guesser" class="github-button">GitHub folder</a>
+
+			<button class="accordion">Hints</button>
+			<div class="accordion-panel">
+				<p>Have a look at the <span class="code">hints.md</span> file in the GitHub folder for a detailed description of all the steps required.</p>
+			</div>
+		</div>
+	</div>
+	<div w3-include-html="/assets/html/footer.html" class="footer"></div>
+	<script>
+		w3IncludeHTML();
+	</script>
+	<script src="/assets/js/accordion.js"></script>
+</body>
+</html>
